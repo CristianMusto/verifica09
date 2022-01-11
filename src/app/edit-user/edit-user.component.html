@@ -1,0 +1,27 @@
+<div class="container-fluid mt-5 pt-5 bg">
+  <div class="container title p-3 my-3 text-white text-center">
+    <h2>Edit your profile</h2>
+  </div>
+  <div class="row text-center">
+    <div class="col mt-2">
+      <input type="text" class="form-control my-3 text-white bgI inp" placeholder="name" aria-label="name" [(ngModel)]="editUser.name">
+    </div>
+    <div class="col mt-2">
+      <input type="text" class="form-control my-3 text-white bgI inp" placeholder="username" aria-label="username" [(ngModel)]="editUser.username">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col mt-2">
+      <input type="text" class="form-control my-3 text-white bgI inp" placeholder="email" aria-label="email" [(ngModel)]="editUser.email">
+    </div>
+    <div class="col mt-2">
+      <input type="text" class="form-control my-3 text-white bgI inp" placeholder="phone" aria-label="phone" [(ngModel)]="editUser.phone">
+    </div>
+    <div class="col mt-2">
+      <input type="text" class="form-control my-3 text-white bgI inp" placeholder="website" aria-label="website" [(ngModel)]="editUser.website">
+    </div>
+    <div class="mt-2 d-grid">
+      <button class="btn btn-primary my-3 btnG" (click)= "updateUser()">update User <i class="bi bi-person-plus-fill"></i></button>
+    </div>
+  </div>
+</div>

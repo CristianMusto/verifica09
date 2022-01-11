@@ -1,0 +1,23 @@
+<div class="container-fluid mt-5 pt-5 pb-5 bg">
+  <div class="container title p-3 my-3 text-white text-center">
+    <h2>posts di: {{user.username}}</h2>
+  </div>
+  <div class="row justify-content-evenly">
+    <div class="card container-fluid text-white bgbody col-5 m-3 posts" *ngFor="let item of posts; let i = index">
+      <div class="card-body">
+        <h5 class="card-title">{{item.title}}</h5>
+        <p class="card-text">
+
+          {{item.body}} <br>
+          - {{user.username}}
+        </p>
+        <div *ngIf="openComments">
+          <p>ciao</p>
+        </div>
+        <div>
+          <button class="btn btn-primary btnSm" (click)="goComments(item)">vai ai commenti <i class="bi bi-chat-fill"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

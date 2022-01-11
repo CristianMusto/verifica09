@@ -1,0 +1,23 @@
+<div class="card text-center container-fluid mt-5 pt-5 bg border-0">
+  <div class="container title p-3 my-5 text-white text-center cardBody">
+    <h2>profilo di: {{detailUser.name}}</h2>
+  </div>
+  <div class="container card-body rounded text-white mb-5 cardBody">
+    <ul class="card-text list-unstyled">
+      <li><b>Name:</b> {{detailUser.name}}</li>
+      <li><b>Email:</b> {{detailUser.email}}</li>
+      <li><b>address:</b> <br> <b>city:</b> {{detailUser.address.city}} <br> <b>street:</b> {{detailUser.address.street}} <br> <b>suite:</b> {{detailUser.address.suite}} <br> <b>zipcode:</b> {{detailUser.address.zipcode}}</li>
+      <li><b>geolocation: </b> <br> <b>lat:</b> {{detailUser.address.geo.lat}} <b>lng:</b> {{detailUser.address.geo.lng}}</li>
+      <li><b>Phone:</b> {{detailUser.phone}}</li>
+      <li><b> Website: </b>{{detailUser.website}}</li>
+      <li><b>company:</b> <br><b>name:</b> {{detailUser.company.name}} <br><b>phrase: </b> {{detailUser.company.catchPhrase}} <br> <b>businness:</b> {{detailUser.company.bs}}</li>
+
+    </ul>
+      <div class="m-3 ">
+        <button class="btn btn-warning btnSm btnP1" (click)="editUser()">Edit <i class="bi bi-pencil-square"></i></button>
+      </div>
+      <div class="m-3 ">
+        <button class="btn btn-success btnSm btnP2" (click)="goPosts()">Posts <i class="bi bi-file-post"></i></button>
+      </div>
+    </div>
+</div>

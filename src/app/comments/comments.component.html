@@ -1,0 +1,9 @@
+<div class="card my-5 py-5 bg">
+  <div class="container title p-3 my-3 text-white text-center com">
+    <h2>commenti</h2>
+  </div>
+  <div class="card-body rounded m-5 bgbody text-white com" *ngFor="let item of commentsA; let i = index">
+    <p> <b>name: </b> {{item.name}} <br> <b>email: </b> {{item.email}} <br> <b>comment: </b> {{item.body}}</p>
+      <button class="btn btn-primary btnSm" (click)= "goPosts()">Torna ai posts <i class="bi bi-skip-backward-circle-fill"></i></button>
+  </div>
+</div>

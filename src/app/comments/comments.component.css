@@ -1,0 +1,32 @@
+.bg {
+  background-image: url('../../assets/95a29941_o.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgbody {
+  backdrop-filter: blur(15px);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+.com {transition: all .2s ease-in-out;}
+.com:hover {transform : scale(1.05)}
+
+.btnSm {
+  transition: all .2s ease-in-out;
+  background-color: rgba(13, 109, 252, 0.5);
+  backdrop-filter: blur(15px);
+}
+
+.btnSm:hover {transform : scale(1.1)}
+
+.title {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}

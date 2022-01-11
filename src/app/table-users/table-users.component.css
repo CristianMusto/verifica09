@@ -1,0 +1,55 @@
+.bg {
+  background-image: url('../../assets/tumblr_pd240vxAhO1qe2uw2o1_1280.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+.an {
+  backdrop-filter: blur(15px);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+
+}
+
+.animate {
+  animation: scale 2s linear;
+}
+
+@keyframes scale {
+  from {transform: scale(0);}
+  to{transform: scale(1);}
+}
+
+.table{
+  transition: all .2s ease-in-out;
+}
+.table:hover {transform: scale(1.025); }
+
+.btnP1 {
+  background-color: rgba(221, 53, 69, 0.5);
+  backdrop-filter: blur(15px);
+}
+
+.btnP2 {
+  background-color: rgba(15, 202, 240, 0.5);
+  backdrop-filter: blur(15px);
+}
+
+.btnP { transition: all .2s ease-in-out; }
+.btnP:hover { transform: scale(1.1); }
+
+.btnG {
+  transition: all .2s ease-in-out;
+  background-color: rgba(13, 109, 252, 0.5);
+  backdrop-filter: blur(15px);
+}
+.btnG:hover { transform: scale(1.01); }
